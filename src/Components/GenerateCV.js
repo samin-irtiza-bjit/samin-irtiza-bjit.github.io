@@ -29,7 +29,7 @@ export const GenerateCV = ({ email, location, telephone, social }) => {
     pdf.text(telephone, 15, 92);
 
     const starterPositionX = 15;
-    let starterPositionY = 406;
+    let starterPositionY = 356;
     social.forEach((socialProp) => {
       pdf.textWithLink(socialProp.label, starterPositionX, starterPositionY, {
         url: socialProp.url,
